@@ -1,0 +1,141 @@
+.market {
+    width: 100%;
+    height: fit-content;
+
+    font-size: 1.2rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+.crypto {
+    color: var(--white);
+    font-size: 3.2rem;
+    margin-left: 70px;
+}
+
+.table_title {
+    width: 90%;
+    margin-top: 50px;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table_row {
+    width: 97%;
+    padding: 0 20px;
+    height: 70px;
+    background-color: #ff00ea;
+    display: grid;
+    grid-template-columns: 16fr 25fr 25fr 25fr;
+    align-items: center;
+    text-align: right;
+    color: var(--white);
+    font-size: 1.2rem;
+    background: linear-gradient(25deg, #2600fc, #ff00ea);
+    border-radius: 8px 8px 0 0;
+
+}
+.coin_item{
+    display: grid;
+    color: var(--white);
+    font-size: 1.8rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    grid-template-columns: 1fr 2fr 3fr 1fr 4fr;
+    height: 100px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f3f2f4;
+    grid-gap: 2rem;
+    align-items: center;
+    background-color: #0f051d;
+    border-bottom: 1px solid #f3f2f4;
+    font-weight: 500;
+    padding-left: 40px;
+    width: 97%;
+    
+}
+.image{
+    width: 60px;
+    height: 60px;
+}
+.green{
+    color: #0ecb81;
+}
+.red{
+    color: red;
+}
+.pagination{
+    margin-left: auto;
+    margin-right: auto;
+}
+@media(max-width:1200px){
+    .coin_item{
+        font-size: 1.5rem;
+    }   
+}
+@media(max-width:1000px){
+    .crypto{
+        font-size: 2.2rem;
+    }
+    .table_row{
+        font-size: 1rem;
+        grid-template-columns: 2fr 3fr 4fr 5fr;
+    }
+    .coin_item{
+        font-size: 1.1rem;
+        margin-bottom: 0;
+        padding-left: 20px;
+        grid-template-columns: 1fr 2fr 4fr 4fr 6fr;
+    }
+    .image{
+        width: 40px;
+        height: 40px;
+    }
+    .coin_item{
+        height: 80px;
+    }
+}
+@media(max-width:740px){
+    .capitalization{
+        display: none;
+    }
+    .table_row{
+        display: flex;
+        justify-content: space-between;
+    }
+    .table_capitalization{
+        display: none;
+    }
+    .coin_item{
+        grid-template-columns: 1fr 3fr 3fr 3fr;
+    }
+}
+@media(max-width:531px){
+    .crypto{
+        margin-left: 30px;
+        font-size: 1.6rem;
+    }
+}
+@media(max-width:440px){
+    .change{
+        display: none;
+    }
+    .green{
+        display: none;
+    }
+    .red{
+        display: none;
+    }
+    .coin_item{
+        grid-template-columns: 1fr 3fr 3fr;
+    }
+    .table_row{
+        justify-content: space-around;
+    }
+}
+@media(max-width:340px){
+    .coin_item{
+        gap: .5rem;
+    }
+}

@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Market from './components/market/Market';
+import Navigation from './components/navigation/Navigation';
+import Home from './components/home/Home';
+import Choose from './components/choosing/Choose';
+import ErrorBoundary from './components/ErrorBoundary';
+import Join from './components/joining/Join';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ErrorBoundary>
+        <Navigation />
+        <main>
+          <Home />
+          <Market />
+          <Choose />
+          <Join/>
+        </main>
+        <Footer/>
+      </ErrorBoundary>
+    </>
   );
 }
 
